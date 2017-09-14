@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+<!--		<link rel="stylesheet" type="text/css" href='bootstrap/css/bootstrap.min.css'/>-->
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		
+	</head>
+	<body>
+		<div id="pt_header"></div>
+		<div id="pt_middle">
+			<div class="pt_main">
+				<div class="pt_top">
+					
+				</div>
+				<div class="pt_center">
+					
+				</div>
+				<div class="pt_bottom">
+					<div class="pt_left">
+						
+					</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pt_footer"></div>
+		
+	    <script src="js/lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		
+//		
+       	ajax({
+       		type:"get",
+       		url:"header.html",
+       		success:function(data){
+       			var pp=data;
+       			$("#pt_header").innerHTML=pp;
+       		}
+       	});
+       	ajax({
+       		type:"get",
+       		url:"footer.html",
+       		success:function(data){
+       			var ss=data;
+       			$("#pt_footer").innerHTML=ss;
+       		}
+       	});
+       	$('#myTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+            $('#myTabs a[href="#profile"]').tab('show'); // Select tab by name
+         $('#myTabs a:first').tab('show'); // Select first tab
+         $('#myTabs a:last').tab('show'); // Select last tab
+         $('#myTabs li:eq(2) a').tab('show');
+        });
+       </script>		
+	</body>
+</html>

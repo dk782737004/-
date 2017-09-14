@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	min-width: 980px;
+}
+/*尾部样式********************************************************************************/
+.footer{
+    background: #f8f8f8;
+    height: 330px;
+    border-top: 1px solid #cccccc;
+}
+.footer .main{
+	height: 100%;
+	width: 980px;
+	margin: 0 auto;
+}
+.footer .top{
+	width: 982px;
+	height: 200px;
+}
+.footer .left{
+	width: 700px;
+	height: 140px;
+	float: left;
+}
+.footer .left>ul{
+	list-style: none;
+	float: left;
+    margin: 40px 80px 0px 3px;
+}
+.footer .left ul li a{
+	text-decoration: none;
+	color: #888888;
+	font-size: 12px;
+}
+.footer .left ul li a:hover{
+	border-bottom: 1px solid;
+}
+.footer .right{
+	width: 282px;
+	height: 200px;
+	float: right;
+}
+.footer .right .eamle{
+	float: right;
+	width: 255px;
+	height: 98px;
+	background: #f3f3f3;
+    color: #888895;
+    font-size: 12px;
+    line-height: 40px;
+    margin: 33px 0 0 0;
+    padding: 0px 0px 0px 25px;
+    float: right;
+}
+.footer .right .smlogo{
+	width: 165px;
+	height: 65px;
+	margin: 134px 0 0 51px;
+	background: url(../img/logo.gif)no-repeat center center;
+}
+.footer .bottom{
+	width: 983px;
+	height: 130px;
+	text-align: center;
+	line-height: 60px;
+	color: #888895;
+	font-size: 12px;
+}

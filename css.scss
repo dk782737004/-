@@ -1,0 +1,56 @@
+$kk:100px;
+$oo:500px;
+$pp:red;
+.box{
+    width: $kk;
+    height: $oo;
+    background: $pp;
+}
+@for $i from 1 to 2{
+    .top#{$i}{
+        @if ($i%2==1){
+             background: red; 
+        }
+      
+    }
+    
+}
+@mixin lysb($bg,$pd){
+    width: 100px;
+    height: $pd;
+  
+    background: $bg;
+}
+.box1{
+    @include lysb(red,10px);
+    @extend.box;
+    div{
+          border: 1px solid;
+          p{
+              background: red;
+          }
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+$w:980px;
+$h:100%;
+.header{
+    width: $w;
+    height:110px;
+    .header_moddle{
+     height: 44px;   
+    }
+    .senced{
+        height: 40px;
+        position: relative;
+    }
+}
+.main{
+    width: $w;
+    height: $h;
+    margin: 0 auto;
+}
+

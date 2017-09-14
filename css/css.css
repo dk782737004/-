@@ -1,0 +1,687 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	min-width: 980px;
+}
+/*头部样式********************************************************************************/
+.header{
+	width:100%;	
+	height: 110px;
+	background: url(../img/未标题-1.png);
+	
+}
+.main{
+	height: 100%;
+	width: 980px;
+	margin: 0 auto ;
+}
+.header .header_moddle{
+	height: 44px;
+}
+.header .senced{
+	height: 40px;
+}
+.header .senced p{
+    background: #464646;
+    text-align: center;
+    font-size: 15px;
+    height: 21px;
+    border-radius: 5px 5px 0 0;
+    color: #FFFFFF;
+    width: 202px;
+    float: left;
+    margin: 8px 0 0 0;
+    padding: 2px 0px 1px 0px;
+    font-size: 12px;
+    color: #cccccc;
+}
+}
+.header .senced .u3{
+	height: 40px;
+	width: 440px;
+	margin: 0 0 0 221px;
+}
+.header .senced .u3 li{
+	float: left;
+	list-style: none;
+    padding: 5px 0px 0 25px;
+}
+.header .senced .u3 li a{
+	text-decoration: none;
+	color:#888895 ;
+	font-size: 14px;
+}
+.header .senced .u3 li:nth-child(1) a{
+	color: #000000;
+}
+.header .senced .u3 li a:hover{
+	color: #fd6600;
+}
+
+.header .u1{
+	list-style: none;
+    margin-left: 220px;
+    height: 30px;
+}
+
+.header .u1 li{
+	float: left;
+	margin: 5px 5px 0 5px;
+}
+.header .u1 li a{
+	text-decoration: none;
+	color: #999999;
+	font-size: 12px;
+}
+.header .u1 li a:hover{
+	color: #fd6600;
+}
+.header .u1 li span{
+	background: url(../img/SNP_SNP面膜_韩国SNP面膜官网_03.png)no-repeat right;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+.logo {
+	width: 150px;
+	height: 42px;
+	float: left;
+}
+@keyframes jj{
+	50%{transform: scale(0.8);}
+	100%{transform: scale(1);}
+}
+.logo:hover{
+	animation: jj 1s linear forwards;
+}
+.logo h1 a span{
+	display: none;
+}
+.logo h1 a{
+	display: block;
+	height: 42px;
+	background: url(../img/logo.gif)no-repeat center center;
+}
+.seacrh{
+	width: 500px;
+	height: 42px;
+	box-shadow:0 0 4px 2px #999 inset;
+	border-radius:10px ;
+	margin: 0 0 0 70px;
+	float: left;
+}
+.seacrh input{
+	width: 420px;
+	height: 30px;
+	border:none;
+	outline: none;
+	font-size: 18px;
+	margin-left:10px;
+	border-radius:10px ;
+	margin-top:6px ;
+}
+.seacrh button{
+	width: 60px;
+	height: 30px;
+	background: #7e7e7e;
+	border-radius:5px ;
+	border: none;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	margin-right: 3px;
+}
+.header .u2{
+	width: 175px;
+	height: 30px;
+	float: right;
+	line-height: 35px;
+}
+.header .u2 li{
+	float: left;
+	list-style: none;
+	padding: 0 5px;
+	font-size: 12px;
+}
+.header .u2 li a{
+	text-decoration: none;
+	color: #888895;
+}
+.header .u2 li a:hover{
+	color: #fd6600;
+}
+.header .u2 li:nth-child(3) span{
+	background: url(../img/bag.gif)no-repeat center center;
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+}
+/*尾部样式********************************************************************************/
+.footer{
+    background: #f8f8f8;
+    height: 330px;
+    border-top: 1px solid #cccccc;
+}
+.footer .main{
+	height: 100%;
+	width: 980px;
+	margin: 0 auto;
+}
+.footer .top{
+	width: 982px;
+	height: 200px;
+}
+.footer .left{
+	width: 700px;
+	height: 140px;
+	float: left;
+}
+.footer .left>ul{
+	list-style: none;
+	float: left;
+    margin: 40px 80px 0px 3px;
+}
+.footer .left ul li a{
+	text-decoration: none;
+	color: #888888;
+	font-size: 12px;
+}
+.footer .left ul li a:hover{
+	border-bottom: 1px solid;
+}
+.footer .right{
+	width: 282px;
+	height: 200px;
+	float: right;
+}
+.footer .right .eamle{
+	float: right;
+	width: 255px;
+	height: 98px;
+	background: #f3f3f3;
+    color: #888895;
+    font-size: 12px;
+    line-height: 40px;
+    margin: 33px 0 0 0;
+    padding: 0px 0px 0px 25px;
+    float: right;
+}
+.footer .right .smlogo{
+	width: 165px;
+	height: 65px;
+	margin: 134px 0 0 51px;
+	background: url(../img/logo.gif)no-repeat center center;
+}
+.footer .bottom{
+	width: 983px;
+	height: 130px;
+	text-align: center;
+	line-height: 60px;
+	color: #888895;
+	font-size: 12px;
+}
+/*首页中部样式********************************************************************************/
+#content .main{
+	background:#FFFFFF;
+	width: 980px;
+	height: 1805px;
+}
+#content .main>.left{
+	height:1760px ;
+	width: 202px;
+    float: left;
+}
+ .nav{
+	width: 198px;
+	height: 251px;
+	border: 2px solid;
+	position:absolute; 
+	top:106px;
+	background: #FFFFFF;
+	border-radius:0 0 5px 5px;
+}
+ .nav p:nth-child(1){
+	background: #464646;
+	text-align: center;
+	font-size: 15px;
+	height: 21px;
+	border-radius:5px ;
+	color: #FFFFFF;
+	width: 200px;
+	height: 21px;
+	border: 1px solid red;
+}
+
+.nav ul{
+	width: 190px;
+	height: 251px;
+	margin: 3px 0 0 5px;
+}
+.nav ul li{
+	width: 190px;
+	list-style: none;
+	border-bottom:1px solid #eee ;
+    line-height: 20px;
+    height: 34px;
+    border-radius: 5px;
+}
+ .nav ul li:nth-child(7) a{
+	margin: 0 0 0 105px;
+}
+ .nav ul li:hover{
+	background: #464646;
+	
+}
+ .nav ul li:hover a{
+	color: #FFFFFF;
+}
+.nav ul li a{
+	text-decoration: none;
+	    margin: 0 0 0 15px;
+	    line-height: 38px;
+	    color: #444444;
+	    font-size: 13px;
+}
+#content .main .left .order{
+    width: 200px;
+    height: 130px;
+    overflow: hidden;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 260px 0 0 0px;
+}
+#content .main .left .order p:nth-child(1){
+    width: 202px;
+    height: 34px;
+    background: url(../img/bang.png);
+    line-height: 34px;
+    font-size: 13px;
+    border-radius: 10px ;
+}
+#content .main .left .order p:nth-child(1) b{
+	margin: 0 0 0 10px;
+}
+#content .main .left .order p:nth-child(2) input{
+	border: none;
+	width: 165px;
+	height: 25px;
+    box-shadow: 0px 2px 5px 1px #ccc inset;
+    outline: none;
+    border-radius:5px ;
+}
+#content .main .left .order p:nth-child(2){
+	width: 165px;
+	height: 25px;
+	border: 1px solid #aaa;
+	border-radius:5px ;
+	margin: 7px 0 0 19px;
+}
+#content .main .left .order button{
+	width: 120px;
+	height: 28px;
+	margin: 20px 0 0 35px;
+	border-radius: ;
+	outline: none;
+}
+#content .main .left .hot{
+	width: 202px;
+    height: 465px;
+    border: 1px solid #CCCCCC;
+    margin: 7px 0px 0 0px;
+    border-radius:10px  ;
+}
+#content .main .left .hot p:nth-child(1){
+	background:url(../img/bang.png);
+	line-height: 34px;
+	font-size: 13px;
+	position: relative;
+	width: 202px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 10px 10px 0 0;
+}
+#content .main .left .hot p:nth-child(1) b{
+	margin: 0 0 0 10px;
+}
+#content .main .left .hot p:nth-child(1) button{
+	position: absolute;
+	top: 0;
+	left: 65px;
+	background: #d5d5d5;
+	width: 45px;
+	height: 18px;
+	font-size: 12px;
+	color: #666666;
+	outline: none;
+	border: none;
+	border-radius:5px ;
+}
+#content .main .left .hot p:nth-child(1) button:hover~.gengduo{
+	display: block;
+}
+#content .main .left .hot .gengduo{
+    display: block;
+    width: 84px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.7;
+    position: absolute;
+    top: -31px;
+    left: 15px;
+    display: none;
+}
+#content .main .left .hot .gengduo i{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid black;
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    right: 8px;
+}
+#content .main .left .hot .goods{
+	width: 202px;
+	height: 432px;
+}
+#content .main .left .hot .goods div{
+	width: 202px;
+	height: 86px;
+}
+#content .main .left .hot .goods div p{
+	width: 60px;
+	height: 60px;
+	margin: 10px 0 0 10px;
+	float: left;
+}
+#content .main .left .hot .goods div p img{
+	width: 60px;
+	height: 60px;
+}
+#content .main .left .hot .goods div span{
+    display: block;
+    font-size: 12px;
+    float: right;
+    width: 111px;
+    height: 47px;
+    margin: 15px 10px 0px 0px;
+	
+}
+#content .main .left .hot .goods div span>a {
+	text-decoration: none;
+	color: black;
+}
+#content .main .left .hot .goods div span>a:hover{
+	color: #fd6600;
+}
+#content .main .left .hot .goods div b{
+	margin: 0px 1px 1px 10px;
+    font-size: 12px
+}
+#content .main .left .paihang{
+	width: 202px;
+	height: 900px;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	border-radius:10px ;
+}
+#content .main .left .paihang p:nth-child(1){
+	width: 202px;
+	height: 34px;
+	background:url(../img/bang.png);
+	line-height: 34px;
+	font-size: 13px;
+	margin: 8px 0 0 0;
+	border-radius: 10px ;
+}
+#content .main .left .paihang p:nth-child(1) b{
+	margin: 0 0 0 10px;
+}
+#content .main .left .paihang .hotgoods{
+	width: 202px;
+	height: 432px;
+}
+#content .main .left .paihang .hotgoods div{
+	width: 202px;
+	height: 86px;
+}
+#content .main .left .paihang .hotgoods div p{
+	width: 60px;
+	height: 60px;
+	margin: 10px 0 0 10px;
+	float: left;
+}
+#content .main .left .paihang .hotgoods div p img{
+	width: 60px;
+	height: 60px;
+}
+#content .main .left .paihang .hotgoods div span{
+    display: block;
+    font-size: 12px;
+    float: right;
+    width: 111px;
+    height: 47px;
+    margin: 15px 10px 0px 0px;
+	
+}
+#content .main .left .paihang .hotgoods div span>a {
+	text-decoration: none;
+	color: black;
+}
+#content .main .left .paihang .hotgoods div span>a:hover{
+	color: #fd6600;
+}
+#content .main .left .paihang .hotgoods div b{
+	margin: 0px 1px 1px 10px;
+    font-size: 12px
+}
+#content .main .tu{
+	width: 774px;
+    height: 1760px;
+    float: right;
+}
+#content .main .tu .lb{
+	width: 774px;
+	height: 372px;
+}
+#content .main .tu .shangpin{
+	width: 774px;
+	height: 585px;
+}
+#content .main .tu .s_top{
+	width: 750px;
+	height: 60px;
+	border-bottom: 1px solid #e4e4e4;
+	position: relative;	
+	line-height: 60px;
+	margin: auto;
+	color: #888888;
+}
+#content .main .tu .s_top p button{
+    position: absolute;
+    top: 21px;
+    left: 95px;
+    background: #d5d5d5;
+    width: 45px;
+    height: 18px;
+    font-size: 12px;
+    color: #666666;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+#content .main .tu .s_top button:hover~span{
+	display: block;
+}
+#content .main .tu .s_top span{
+    width: 84px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.7;
+    position: absolute;
+    top: -8px;
+    left: 45px;
+    display: none;
+}
+#content .main .tu .s_top span i{
+	    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid black;
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    right: 8px;
+}
+#content .main .tu .s_bottom dl{
+	width: 193px;
+	height: 262px;
+	overflow: hidden;
+	float: left;
+}
+#content .main .tu .s_bottom dl b{
+	font-size: 14px;
+	margin: 0 0 0 25px;
+}
+#content .main .tu .s_bottom dl dt{
+	width: 202px;
+	height: 190px;
+	text-align: center;
+}
+#content .main .tu .s_bottom dl dd{
+	font-size: 12px;
+	width: 159px;
+	height: 30px;
+	margin: 5px 0 0 25px;
+}
+#content .main .tu .s_bottom dl dd a{
+	text-decoration: none;
+	color: black;
+	
+}
+#content .main .tu .s_bottom dl dd a:hover{
+	color: #FD6600;
+	border-bottom: 1px solid #FD6600;
+}
+#content .main .tu .s_bottom dl:nth-child(1) dd a{
+	text-decoration: none;
+	color: #6ccbd5;
+}
+#content .main .tu .ss_top{
+	width: 750px;
+	height: 60px;
+	border-bottom: 1px solid #e4e4e4;
+	position: relative;	
+	line-height: 60px;
+	margin: auto;
+	color: #888888;
+}
+#content .main .tu .ss_top p button{
+    position: absolute;
+    top: 21px;
+    left: 95px;
+    background: #d5d5d5;
+    width: 45px;
+    height: 18px;
+    font-size: 12px;
+    color: #666666;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+#content .main .tu .ss_top button:hover~span{
+	display: block;
+}
+#content .main .tu .ss_top span{
+    width: 84px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.7;
+    position: absolute;
+    top: -8px;
+    left: 45px;
+    display: none;
+}
+#content .main .tu .ss_top span i{
+	    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid black;
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    right: 8px;
+}
+#content .main .tu .shangpin2{
+	width: 774px;
+	height: 535px;
+}
+.shangpin .hh{
+	font-size: 21px;
+}
+.shangpin2 .hh{
+	font-size: 21px;
+}
+#content .main .tu .ss_bottom dl{
+	width: 193px;
+	height: 262px;
+	overflow: hidden;
+	float: left;
+}
+#content .main .tu .ss_bottom dl b{
+	font-size: 14px;
+	margin: 0 0 0 25px;
+}
+#content .main .tu .ss_bottom dl dt{
+	width: 202px;
+	height: 155px;
+	text-align: center;
+}
+#content .main .tu .ss_bottom dl dd{
+	font-size: 12px;
+	width: 159px;
+	height: 30px;
+	margin: 5px 0 0 25px;
+}
+#content .main .tu .ss_bottom dl dd a{
+	text-decoration: none;
+	color: black;
+	
+}
+#content .main .tu .ss_bottom dl dd a:hover{
+	color: #FD6600;
+	border-bottom: 1px solid #FD6600;
+}
+#content .main .tu .ss_bottom dl:nth-child(1) dd a{
+	text-decoration: none;
+	color: #337dff;
+}
+#content .main .tu .ss_bottom dl:nth-child(2) dd a{
+	color: #FD6600;
+}
+#content .main .tu .ss_bottom dl:nth-child(3) dd a{
+	color: #008002;
+}
+#content .main .tu .ss_bottom dl:nth-child(5) dd a{
+	color: #6ccbd5;
+}
