@@ -1,6 +1,10 @@
 define(function(){
-$("#reg_header").load("header.html");
-$("#reg_footer").load("footer.html");
-}
-	
-);
+$("#reg_header").load("../html/include/header.html");
+$("#reg_footer").load("../html/include/footer.html");
+$("#log_footer").load("../html/include/footer.html");
+$("#log_header").load("../html/include/header.html");
+$("#lis_footer").load("../html/include/footer.html");
+$("#lis_header").load("../html/include/header.html");
+$("#header").load("html/include/header.html");
+$("#footer").load("html/include/footer.html");
+});

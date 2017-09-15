@@ -147,25 +147,8 @@
 		
 		</div>
 		<div id="footer"></div>
+		<script src="js/lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/requirejs/require.js" data-main = "js/login"></script>
 		
-		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			ajax({
-				type:"get",
-				url:"header.html",
-				success:function(data){
-					var ss=data;
-					$("#header").innerHTML=ss;
-				}
-			});
-			ajax({
-				type:"get",
-				url:"footer.html",
-				success:function(data){
-					var bb=data;
-					$("#footer").innerHTML=bb;
-				}
-			});
-		</script>
 	</body>
 </html>
