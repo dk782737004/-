@@ -1,0 +1,33 @@
+/*购物车***************************************************************/
+#car_middle .car_main{
+	width: 980px;
+	min-height: 376px;
+	border: 1px solid;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#car_middle .car_main .car_center{
+	width: 980px;
+	margin-top:45px;
+	height: 300px;
+	border-top: 1px solid #e4e4e4;
+}
+.car_center .shopping{
+	width: 173px;
+    height: 37px;
+    margin: 78px 0 0 429px;
+}
+#car_middle .car_main .car_center .cart{
+	width: 585px;
+	height: 200px;
+}
+#car_middle .car_main .car_center .cart>b{
+	font-size: 20px;
+    color: #999999;
+    margin: 66px 0px 0 374px;
+    display: block;
+    width: 200px;
+}
+#car_middle .car_main .bang{
+   margin: -18px 0 0 27px;
+}

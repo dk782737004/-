@@ -5,7 +5,7 @@
 		<title></title>
 	</head>
 	<link rel="stylesheet" type="text/css" href="../css/header.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/register.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
 	<body>
 		<div id="reg_header">
@@ -14,16 +14,30 @@
 		<div id="reg_middle">
 			<div class="reg_main">
 				<div class="reg">
-					<div class="reg_left">
+					<div class="reg_left" style="position: relative;">
 						<h3>注册新会员</h3>  
-						<div class="zc">
-						<p><img src="../img/-.png"/> 用户名：<span><input type="text" name="" id=""  /></span><br /></p>
-						<p> <img src="../img/-.png"/> E-mail：<span><input type="text" name="" id=""  /></span><br /></p>
-						<p><img src="../img/-.png"/>密码：<span><input type="text" name="" id=""  /></span><br /></p>  
-						<p><img src="../img/-.png"/>确认密码：<span><input type="text" name="" id=""  /></span><br /></p>
-						<p>QQ : <span><input type="text" name="" id=""  /></span><br /></p>
-						<p>手机：<span><input type="text" name="" id=""  /></span><br /></p>
-						<p><img src="../img/-.png"/><label><span><input type="checkbox" name="" id="" value="" /></span>我已看过并接受<a href="#">《用户协议》</a></label></p>
+						<div class="zc" >
+						<p ><img src="../img/-.png"/> 用户名：<span><input type="text" id="user_name" /></span><br />
+						<span id="yes" ><img src="../img/yes.png" /></span></p>
+						<span id="name_info" ><i class="i1"></i>用户名不能少于三个字符或两个中文</span>  
+						
+						<p ><img src="../img/-.png"/> E-mail：<span><input type="text" id="email" /></span><br />
+						<span id="yes1" ><img src="../img/yes.png" /></span></p>
+						<span id="email_info" ><i class="i2"></i>请填写你的E-mail</span>  
+						
+					    <p ><img src="../img/-.png"/> 密码：<span><input type="text" id="password" /></span><br />
+						<span id="yes2" ><img src="../img/yes.png" /></span></p>
+						<span id="pad_info" ><i class="i3"></i>密码长度不能少于6个字符</span>  
+						
+						<p ><img src="../img/-.png"/> 确认密码：<span><input type="text" id="password1" /></span><br />
+						<span id="yes3" ><img src="../img/yes.png" /></span></p>
+						<span id="pad1_info" ><i class="i4"></i>密码长度不能少于6个字符</span>
+						
+						<p >QQ : <span><input type="text" name="" id="qqnum"  /></span><br /></p>
+						
+						<p >手机：<span><input type="text" name="" id="phone"  /></span><br /></p>
+						
+						<p ><img src="../img/-.png"/><label><span class="_input"><input type="checkbox" name="" id="" value="" /></span>我已看过并接受<a href="#">《用户协议》</a></label></p>
 						<div><a href="#" class="an"></a></div>
 						</div>
 					</div>
@@ -38,6 +52,50 @@
 		<div id="reg_footer"></div>
 		<script src="../js/lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/requirejs/require.js" data-main = "../js/reg"></script>
-
+         <script type="text/javascript">
+         	$(function(){
+         	   $("#user_name").blur(function(){
+         	   	var reg=/^[a-z0-9_-]{3,16}$/;
+       	   	if(reg.test(this.value)){
+      	   		$("#name_info").fadeOut();
+      	   		$("#yes").fadeIn();
+       	   	}else{
+      	   	    $("#name_info").fadeIn();
+      	   	    $("#yes").fadeOut();
+      	   	}
+              });
+              $("#email").blur(function(){
+         	   	var reg=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+       	   	if(reg.test(this.value)){
+      	   		$("#email_info").fadeOut();
+      	   		$("#yes1").fadeIn();
+       	   	}else{
+      	   	    $("#email_info").fadeIn();
+      	   	    $("#yes1").fadeOut();
+      	   	}
+              });
+              $("#password").blur(function(){
+         	   	var reg=/^[a-z0-9_-]{6,18}$/;
+       	   	if(reg.test(this.value)){
+      	   		$("#pad_info").fadeOut();
+      	   		$("#yes2").fadeIn();
+       	   	}else{
+      	   	    $("#pad_info").fadeIn();
+      	   	    $("#yes2").fadeOut();
+      	   	}
+              });
+               $("#password1").blur(function(){
+       	   	if($("#password").val()===$(this).val()){
+       	   		console.log($("#password").value)
+      	   		$("#pad1_info").fadeOut();
+      	   		$("#yes3").fadeIn();
+       	   	}else{
+      	   	    $("#pad1_info").fadeIn();
+      	   	    $("#yes3").fadeOut();
+      	   	}
+              });
+        
+     });
+         </script>
 	</body>
 </html>

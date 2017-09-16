@@ -1,0 +1,236 @@
+/*注册中部样式********************************************************************************/
+#reg_middle .reg_main{
+	width: 980px;
+	height: 470px;
+	margin: 0 auto;
+}
+#reg_middle .reg_main .reg{
+	border: 1px solid #CCCCCC;
+	width: 980px;
+	height: 449px;
+	margin: 10px 0 0 0;
+}
+#reg_middle .reg_main .reg .reg_left{
+	height: 449px;
+	width: 518px;
+	float: left;
+	
+}
+#reg_middle .reg_main .reg .reg_left h3{
+	margin: 65px 0 0 45px;
+}
+#reg_middle .reg_main .reg .reg_left .zc{
+	width: 300px;
+	height: 320px;
+    margin: 0 0 0 135px;
+    font-size: 12px;overflow: hidden;
+}
+#reg_middle .reg_main .reg .reg_left .zc span{
+	float: right;
+	border-radius:3px ;
+}
+.zc #yes{
+	display: block;
+	position: absolute;
+	top: 110px;
+	right: 95px;
+	display: none;
+}
+.zc #name_info{
+	display: block;
+	background: black;
+	color:white;
+	height: 24px;
+	position: absolute;
+	top: 102px;
+	right: -95px;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	display: none;
+	opacity: 0.7;
+	padding: 0 5px 0 6px;
+}
+.zc #name_info .i1{
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	 border-right: 9px solid black;
+	 width: 0px;height: 0px;
+	 display: block; 
+	 position: absolute;
+	 right: 203px; 
+	 top: 7px;
+}
+.zc #yes1{
+	display: block;
+	position: absolute;
+	top: 149px;
+	right: 95px;
+	display: none;
+}
+.zc #email_info{
+	display: block;
+	background: black;
+	color:white;
+	height: 24px;
+	position: absolute;
+	top: 143px;
+	right: -2px;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	display: none;
+	opacity: 0.7;
+	padding: 0 5px 0 6px;
+}
+.zc #email_info .i2{
+	 border-top: 5px solid transparent;
+	 border-bottom: 5px solid transparent;
+	 border-right: 9px solid black;
+	 width: 0px;height: 0px;
+	 display: block; 
+	 position: absolute;
+	 right: 108px; 
+	 top: 7px;
+}
+.zc #yes2{
+	display: block;
+	position: absolute;
+	top: 188px;
+	right: 95px;
+	display: none;
+}
+.zc #pad_info{
+	display: block;
+	background: black;
+	color:white;
+	height: 24px;
+	position: absolute;
+	top: 184px;
+	right: -44px;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	display: none;
+	opacity: 0.7;
+	padding: 0 5px 0 6px;
+}
+.zc #pad_info .i3{
+	 border-top: 5px solid transparent;
+	 border-bottom: 5px solid transparent;
+	 border-right: 9px solid black;
+	 width: 0px;height: 0px;
+	 display: block; 
+	 position: absolute;
+	 right: 151px; 
+	 top: 7px;
+}
+.zc #yes3{
+	display: block;
+	position: absolute;
+	top: 227px;
+	right: 95px;
+	display: none;
+}
+.zc #pad1_info{
+	display: block;
+	background: black;
+	color:white;
+	height: 24px;
+	position: absolute;
+	top: 222px;
+	right: -44px;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	display: none;
+	opacity: 0.7;
+	padding: 0 5px 0 6px;
+}
+.zc #pad1_info .i4{
+	 border-top: 5px solid transparent;
+	 border-bottom: 5px solid transparent;
+	 border-right: 9px solid black;
+	 width: 0px;height: 0px;
+	 display: block; 
+	 position: absolute;
+	 right: 151px; 
+	 top: 7px;
+}
+#reg_middle .reg_main .reg .reg_left .zc>p{
+	margin: 15px 0 0 0;
+	width: 265px;
+	text-align: right;
+	float: left;
+}
+#reg_middle .reg_main .reg .reg_left .zc div{
+	width: 100px;
+	height: 36px;
+	background: url(../img/zc.png)no-repeat center center;
+	margin: 275px 0 0 90px;
+}
+
+#reg_middle .reg_main .reg .reg_left .zc span input{
+	outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    height: 22px;
+    opacity:0.7;
+}
+#reg_middle .reg_main .reg .reg_left .zc span input:hover{
+	opacity:1;
+}
+.zc ._input{
+	margin: -1px 0px 0 -21px;
+    position: absolute;
+}
+#reg_middle .reg_main .reg .reg_left .zc p:nth-child(7) a{
+	text-decoration: none;
+	color: #656565;
+}
+#reg_middle .reg_main .reg .reg_left .zc p:nth-child(7) a:hover{
+	text-decoration: underline;
+	color: #FD6600;
+}
+#reg_middle .reg_main .reg .reg_left .zc .an{
+	display: block;
+	width:100px;
+	height: 36px;
+}
+#reg_middle .reg_main .reg .reg_right{
+	width: 460px;
+	height: 449px;
+	float: left;
+}
+#reg_middle .reg_main .reg .reg_right>p{
+    width: 300px;
+    height: 27px;
+    margin: 58px 0 0 62px;
+    font-size: 12px;
+    line-height: 27px;
+}
+#reg_middle .reg_main .reg .reg_right>p>span{
+	display: inline-block;
+    margin: 0 0 0 50px;
+    font-size: 16px;
+}
+#reg_middle .reg_main .reg .reg_right .own{
+	display: block;
+	width: 229px;
+	height: 17px;
+	font-size: 12px;
+	margin: 35px 0 0 175px;
+}
+#reg_middle .reg_main .reg .reg_right button{
+	margin: 5px 0 0 176px;
+	width: 85px;
+	height: 25px;
+	outline: none;
+}
+#reg_middle .reg_main .reg .reg_right button>a{
+	text-decoration: none;
+	color: #464646;
+}
+#reg_middle .reg_main .reg .reg_right button>a:hover{
+	color: #FD6600;
+}

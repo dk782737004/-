@@ -5,7 +5,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lis.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
 	</head>
 	<body>
@@ -25,7 +25,7 @@
 						<div><p><a href="#"><img src="../img/23.jpg"/></a></p><span><a href="goods-25.html" title="SNP精华面膜系列 神龙动物面膜十片装" class="image">SNP精华面膜系列 神龙动物面膜十片装</a></span><b>159</b></div>
 						</div>
 						<div class="bottom_left_bottom">
-						<p class="dd"><b class="hh">浏览历史</b><span class="clear"><a href="#">清除</a></span></p>
+						<p class="dd"><b class="hh">浏览历史</b><span class="clear"><a href="#" class="_clear">清除</a></span></p>
 						<div class="history">
 						<div><p><a href="#"><img src="../img/11.jpg"/></a></p><span><a href="goods-6.html" title="SNP精华面膜系列 深海美容面膜十片装" class="image">SNP精华面膜系列 深海美容面膜十片装</a></span><b>139</b></div>
 						<div><p><a href="#"><img src="../img/12.jpg"/></a></p><span><a href="goods-6.html" title="SNP精华面膜系列 胶原蛋白面膜十片装" class="name">SNP精华面膜系列 胶原蛋白面膜十片装</a></span><b>139</b></div>
@@ -51,27 +51,6 @@
 								<dt><a href="#"><img src="../img/11.jpg"/></a></dt>
 								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
 							<b>215</b>
-							</dl>
-							<dl>
-								<dt><a href="#"><img src="../img/24.jpg"/></a></dt>
-								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
-							<b>215</b>
-							</dl>
-							<dl>
-								<dt><a href="#"><img src="../img/23.jpg"/></a></dt>
-								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
-							<b>215</b>
-							</dl>
-							<dl>
-								<dt><a href="#"><img src="../img/22.jpg"/></a></dt>
-								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
-							<b>215</b>
-							</dl>
-							<dl>
-								<dt><a href="#"><img src="../img/21.jpg"/></a></dt>
-								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
-							<b>215</b>
-							</dl>
 							</div>
 							
 				</div>
@@ -82,6 +61,23 @@
 		<div id="lis_footer"></div>
 		<script src="../js/lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/requirejs/require.js" data-main = "../js/reg"></script>
+		   <script type="text/javascript">
+		   $(function(){
+		   	$.getJSON("../mock/lis.json",function(data){
+		   for (let i=0;i<data.length;i++) {
+		   	var pp=$(".s_bottom dl").eq(i).clone(true);
+		   	pp.find("dt img	").attr("src",data[i].img);
+		   	pp.find("dd a").html(data[i].title);
+		   	pp.find("b").html(data[i].price);
+		   	$(".s_bottom").append(pp);
+		    }
+		   	});
+		   	$("._clear").click(function(){
+		  	$(".history div").remove();
+		   	});
 		
+		   });
+		   
+		   </script>
 	</body>
 </html>

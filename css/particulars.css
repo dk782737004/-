@@ -1,0 +1,27 @@
+/*商品详情页面**********************************************************/
+#pt_middle .pt_main{
+	width: 1011px;
+	height: 10300px;
+	border: 1px solid;
+	margin: 0 auto;
+}
+.pt_top{
+	width: 1011px;	
+	height: 462px;
+	background: red;
+}
+.pt_center{
+	width: 1011px;
+	height: 134px;
+	background: black;
+}
+.pt_bottom{
+	width: 1011px;
+	height: 9700px;
+    border: 1px solid red;
+}
+.pt_bottom .pt_left{
+	width: 227px;
+	height: 9700px;
+	background: pink;
+}

@@ -7,4 +7,8 @@ $("#lis_footer").load("../html/include/footer.html");
 $("#lis_header").load("../html/include/header.html");
 $("#header").load("html/include/header.html");
 $("#footer").load("html/include/footer.html");
+$("#car_header").load("../html/include/header.html");
+$("#car_footer").load("../html/include/footer.html");
+$("#pt_header").load("../html/include/header.html");
+$("#pt_footer").load("../html/include/footer.html");
 });
