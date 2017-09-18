@@ -1,27 +1,436 @@
 /*商品详情页面**********************************************************/
 #pt_middle .pt_main{
 	width: 1011px;
-	height: 10300px;
-	border: 1px solid;
+	height: 2350px;
 	margin: 0 auto;
 }
 .pt_top{
 	width: 1011px;	
-	height: 462px;
-	background: red;
+	height: 476px;
 }
 .pt_center{
 	width: 1011px;
 	height: 134px;
-	background: black;
 }
 .pt_bottom{
 	width: 1011px;
-	height: 9700px;
-    border: 1px solid red;
 }
 .pt_bottom .pt_left{
-	width: 227px;
-	height: 9700px;
-	background: pink;
+	width: 201px;
+	height: 1684px;
+	float: left;
+}
+.pt_top ._nav{
+	width: 1011px;
+	height: 43px;
+	line-height: 43px;
+}
+.pt_top ._nav .tai{
+	font-size: 12px;
+	margin: 0 0 0 15px;
+}
+.pt_top ._nav .tai a{
+	text-decoration: none;
+	color: #777777;
+}
+.pt_top ._nav .tai a:hover{
+	text-decoration: underline;
+}
+.pt_top .detail{
+	width: 1011px;
+	height: 433px;
+}
+.pt_top .detail_left{
+	width: 371px;
+	height: 433px;
+	background: url(../img/xiangqing.png)no-repeat center center;
+	float: left;
+}
+.pt_top .detail_right{
+	width: 640px;
+	height: 433px;
+	float: left;
+	font-size: 13px;
+}
+.pt_top .detail_right p:nth-child(1){
+	height: 20px;	
+	font-size: 20px;
+	margin: 0 0 0 0;
+}
+.pt_top .detail_right p:nth-child(2){
+	font-size: 12px;
+	margin: 33px 0 0 14px;
+}
+.pt_top .detail_right p:nth-child(2) b{
+	font-size: 20px;
+	color: #f04331;
+}
+.pt_top .detail_right p:nth-child(3){
+		margin: 12px 0 0 14px;
+}
+.pt_top .detail_right p:nth-child(4){
+		margin: 12px 0 0 14px;
+}
+.pt_top .detail_right p:nth-child(5){
+		margin:  12px 0 0 14px;
+}
+.pt_top .detail_right>p:nth-child(6){
+		margin: 12px 0 0 14px;
+}
+.pt_top .detail_right>p:nth-child(7){
+		margin: 12px 0 0 14px;
+}
+.pt_top .detail_right>p:nth-child(8){
+		margin: 12px 0 0 14px;
+}
+.pt_top .detail_right>p:nth-child(9){
+		margin: 12px 0 0 14px;
+}
+.pt_top .detail_right .price{
+	margin: 28px 0 0 14px;
+	font-size: 13px;
+}
+.pt_top .detail_right .price .add{
+	width: 156px;
+	height: 37px;
+	outline: none;
+	border: none;
+	margin: 0 5px 0 0;
+	background: url(../img/addcar.png)no-repeat center center;
+}
+.pt_top .detail_right .price .collect{
+	width: 99px;
+	height: 37px;
+	outline: none;
+	border: none;
+	background: url(../img/shoucang-.png) no-repeat center center;
+}
+.pt_top .detail_right .price>p:nth-child(1){
+	font-size: 13px;
+}
+.pt_top .detail_right .price>p:nth-child(2){
+	margin: 0 0 0 0;
+	padding: 8px 0 8px 0;
+}
+.pt_center>p{
+	margin: 5px 0 36px 14px;
+	font-size: 12px;
+}
+.pt_center input{
+	width: 205px;
+	height: 25px;
+	border-radius:3px ;
+	margin: 0 0 0 16px;
+	outline: none;
+}
+.pt_center button{
+	width: 60px;
+	height: 25px;
+	border-radius:5px ;
+	outline: none;
+	border: none;
+	color: #555555;
+	margin: 0 0 0 5px;
+	background: #ebebeb;
+}
+.pt_bottom .same{
+	width: 201px;
+	height: 455px;
+	border: 1px solid #e4e4e4;
+	border-radius: 3px;
+}
+.pt_bottom .same>p:nth-child(1){
+	width: 201px;
+	height: 35px;
+	background: url(../img/bang.png) repeat scroll top left;
+	font-size: 12px;
+}
+.pt_bottom .same>p:nth-child(1) b{
+	margin: 0 0 0 10px;
+	line-height: 35px;
+}
+.pt_bottom .same .sames div{
+	width: 202px;
+	height: 86px;
+}
+.pt_bottom .same .sames div p{
+	  width: 60px;
+    height: 60px;
+    margin: 10px 0 0 10px;
+    float: left;
+}
+.pt_bottom .same .sames div p img{
+ 	width: 60px;
+ 	height: 60px;
+ }
+.pt_bottom .same .sames div span{
+	display: block;
+    font-size: 12px;
+    float: right;
+    width: 111px;
+    height: 40px;
+    margin: 15px 10px 0px 0px;
+}
+.pt_bottom .same .sames div span>a{
+	text-decoration: none;
+	color: black;
+}
+.pt_bottom .same .sames div span>a:hover{
+	color: #f04331;
+	text-decoration: underline;
+}
+.pt_bottom .same .sames div b
+{
+	margin: 0px 1px 1px 10px;
+    font-size: 12px;
+}
+.pt_bottom .classify{
+	width: 201px;
+	height: 455px;
+	border: 1px solid #e4e4e4;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.pt_bottom .classify>p:nth-child(1){
+	width: 201px;
+	height: 35px;
+	background: url(../img/bang.png) repeat scroll top left;
+	font-size: 12px;
+}
+.pt_bottom .classify>p:nth-child(1) b{
+	margin: 0 0 0 10px;
+	line-height: 35px;
+}
+.pt_bottom .classify .classify1 div{
+	width: 202px;
+	height: 86px;
+}
+.classify1 div p{
+	width: 60px;
+    height: 60px;
+    margin: 10px 0 0 10px;
+    float: left;
+}
+.classify1 div p img{
+ 	width: 60px;
+ 	height: 60px;
+ }
+.classify1 div span{
+	display: block;
+    font-size: 12px;
+    float: right;
+    width: 111px;
+    height: 40px;
+    margin: 15px 10px 0px 0px;
+}
+.classify1 div span>a{
+	text-decoration: none;
+	color: black;
+}
+.classify1 div span>a:hover{
+	color: #f04331;
+	text-decoration: underline;
+}
+.classify1 div b
+{
+	margin: 0px 1px 1px 10px;
+    font-size: 12px;
+}
+.pt_bottom .fit{
+	width: 201px;
+	height: 457px;
+	border: 1px solid #e4e4e4;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.pt_bottom .fit>p:nth-child(1){
+	width: 201px;
+	height: 35px;
+	background: url(../img/bang.png) repeat scroll top left;
+	font-size: 12px;
+}
+.pt_bottom .fit>p:nth-child(1) b{
+	margin: 0 0 0 10px;
+	line-height: 35px;
+}
+.pt_bottom .fit .fit1 div{
+	width: 202px;
+	height: 86px;
+}
+.fit1 div p{
+	width: 60px;
+    height: 60px;
+    margin: 10px 0 0 10px;
+    float: left;
+}
+.fit1 div p img{
+ 	width: 60px;
+ 	height: 60px;
+ }
+.fit1 div span{
+	display: block;
+    font-size: 12px;
+    float: right;
+    width: 111px;
+    height: 40px;
+    margin: 15px 10px 0px 0px;
+}
+.fit1 div span>a{
+	text-decoration: none;
+	color: black;
+}
+.fit1 div span>a:hover{
+	color: #f04331;
+	text-decoration: underline;
+}
+.fit1 div b
+{
+	margin: 0px 1px 1px 10px;
+    font-size: 12px;
+}
+.pt_bottom .also{
+	width: 201px;
+	height: 293px;
+	border: 1px solid #e4e4e4;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.pt_bottom .also>p:nth-child(1){
+	width: 201px;
+	height: 35px;
+	background: url(../img/bang.png) repeat scroll top left;
+	font-size: 12px;
+}
+.pt_bottom .also>p:nth-child(1) b{
+	margin: 0 0 0 10px;
+	line-height: 35px;
+}
+.pt_bottom .also .also1 div{
+	width: 202px;
+	height: 86px;
+}
+.also1 div p{
+	width: 60px;
+    height: 60px;
+    margin: 10px 0 0 10px;
+    float: left;
+}
+.also1 div p img{
+ 	width: 60px;
+ 	height: 60px;
+ }
+.also1 div span{
+	display: block;
+    font-size: 12px;
+    float: right;
+    width: 111px;
+    height: 40px;
+    margin: 15px 10px 0px 0px;
+}
+.also1 div span>a{
+	text-decoration: none;
+	color: black;
+}
+.also1 div span>a:hover{
+	color: #f04331;
+	text-decoration: underline;
+}
+.also1 div b
+{
+	margin: 0px 1px 1px 10px;
+    font-size: 12px;
+}
+.pt_right{
+	width: 792px;
+	float: right;
+}
+.pt_right .ri_top{
+	height: 35px;
+	width: 792px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.pt_right .ri_top ul{
+	height: 36px;
+	width: 335px;
+	background: white;
+	font-size: 12px;
+}
+.pt_right .ri_top li{
+	float: left;
+	border-radius:5px 5px 0 0 ;
+	list-style: none;
+	padding: 7px 11px 7px 22px;
+	height: 20px;
+    width: 75px;
+    text-align: center;
+    
+}
+.pt_right .ri_top .describe{
+	border: 1px solid #dddddd;
+	border-bottom: none;
+}
+.pt_right .ri_top .pro1{
+	display: none;
+}
+.pt_right .ri_top .com1{display: none;}
+.pt_right .ri_top .property{
+	border-bottom: 1px solid #dddddd;
+}
+.pt_right .ri_top .comment{
+	border-bottom: 1px solid #dddddd;
+}
+.pt_right .ri_bottom{
+	width:792px;
+}
+.pt_right .ri_bottom .des1{
+	margin-top: 48px;
+}
+.pt_right .ri_bottom .comment>span{
+	width: 10px;
+	height: 10px;
+	border-radius:5px ;
+	background: #CCCCCC;
+}
+.amount{
+	display: inline-block;
+    width: 20px;
+    height: 17px;
+    color: white;
+    background: #cccccc;
+    border-radius: 5px;
+    margin: 0px 0px 0 5px;
+}
+.pt_right .ri_bottom .pro1{
+	display: none;
+}
+.pt_right .ri_bottom .pro1 p{
+	width: 700px;
+    height: 32px;
+    font-size: 13px;
+}
+.pt_right .ri_bottom .pro1 .hh{
+	margin: 22px 0 0 31px;
+    border-bottom: 1px dashed #DDDDDD;
+}
+.pt_right .ri_bottom .pro1 p .a1{
+	display:inline-block;
+	margin: 0 0 0 30px;
+	width: 200px;
+	text-align: left;
+}
+.pt_right .ri_bottom .pro1 p .a2{
+	display:inline-block;
+	margin: 0 0 0 35px;
+	width: 200px;
+	text-align: left;
+}
+.pt_right .ri_bottom .com1{
+	height: 1500px;
+	width: 792px;
+	border: 1px solid;
+	display: none;
+}
+.pt_right .ri_bottom .com1 p{
+	margin: 0 0 0 0;
+	
 }
