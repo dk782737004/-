@@ -39,22 +39,37 @@
 							<p><b>品牌：</b><span class="span1">全部</span><span class="span2">韩国SNP</span></p>
 						 <ul>
 								<li>排序：</li>
-								<li><a href="#">上架时间<span class="up"></span></a></li>
-								<li><a href="#">更新时间<span class="up"></span></a></li>
-								<li><a href="#">价格<span class="up"></span></a></li>
+								<li class="putaway"><a href="#">上架时间<span class="up"></span></a></li>
+								<li class="update"><a href="#">更新时间<span class="up"></span></a></li>
+								<li class="price"><a href="#">价格<span class="up"></span></a></li>
 							</ul>
 						</div>
 						<div class="bottom_right_bottom">
-									<div class="shangpin">
-						<div class="s_bottom">
+						<div class="shangpin">
+						   <div class="s_bottom">
 							<dl>
 								<dt><a href="#"><img src="../img/11.jpg"/></a></dt>
 								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
 							<b>215</b>
 							</div>
-							
-				</div>
-						</div>
+				        </div>
+				        <div class="shangpin1">
+						   <div class="s_bottom1">
+							<dl>
+								<dt><a href="#"><img src="../img/12.jpg"/></a></dt>
+								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
+							<b>215</b>
+							</div>
+				        </div>
+				        <div class="shangpin2">
+						   <div class="s_bottom2">
+							<dl>
+								<dt><a href="#"><img src="../img/23.jpg"/></a></dt>
+								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
+							<b>259</b>
+							</div>
+				        </div>
+					</div>
 				</div>	
 			</div>
 		</div>
@@ -72,10 +87,83 @@
 		   	$(".s_bottom").append(pp);
 		    }
 		   	});
+		   		$.getJSON("../mock/lis1.json",function(data){
+		   for (let i=0;i<data.length;i++) {
+		   	var oo=$(".s_bottom1 dl").eq(i).clone(true);
+		   	oo.find("img").attr("src",data[i].img);
+		   	oo.find("dl dd a").html(data[i].title);
+		   	oo.find("b").html(data[i].price);
+		   	$(".s_bottom1").append(oo);
+		    }
+		   	});
+		   		$.getJSON("../mock/lis2.json",function(data){
+		   for (let i=0;i<data.length;i++) {
+		   	var ll=$(".s_bottom2 dl").eq(i).clone(true);
+		   	ll.find("dt img	").attr("src",data[i].img);
+		   	ll.find("dd a").html(data[i].title);
+		   	ll.find("b").html(data[i].price);
+		   	$(".s_bottom2").append(ll);
+		    }
+		   	});
 		   	$("._clear").click(function(){
 		  	$(".history div").remove();
 		   	});
-		
+		   	$(".putaway").on("click",function(){
+		   	$(".update").css("border","none");
+		   	$(".shangpin1").css("display","none");
+		   	$(".shangpin").css("display","block");
+		   	$(".shangpin2").css("display","none");
+		   	$(".price").css("border","none");
+		   	$(".putaway").css("border","2px solid #dddddd")
+		   	            .css("border-bottom","none");
+		   });
+		   $(".update").on("click",function(){
+		   	$(".putaway").css("border","none")
+		   	$(".shangpin1").css("display","block");
+		   	$(".shangpin").css("display","none");
+		   	$("shangpin2").css("display","none");
+		   	$(".price").css("border","none");
+		   	$(".update").css("border","2px solid #dddddd")
+		   	            .css("border-bottom","none")
+		   	            .css("display","block");
+		   	            
+		   });
+		   $(".price").on("click",function(){
+		   	$(".putaway").css("border","none")
+		   	$(".update").css("border","none");
+		   	$(".shangpin1").css("display","none");
+		   	$(".shangpin").css("display","none");
+		   	$(".shangpin2").css("display","block");
+		   	$(".price").css("border","2px solid #dddddd")
+		   	           .css("border-bottom","none")
+		   	           .css("display","block");
+		   });
+		   $(".span2").on("click",function(){
+		   	$(".span2").css("background","#666666")
+		   	           .css("color","white");
+		   	$(".span1").css("background","white")
+		   	           .css("color","black");
+		   	
+		   });
+		    $(".span1").on("click",function(){
+		   	$(".span1").css("background","#666666")
+		   	           .css("color","white")
+		   	$(".span2").css("background","white")
+		   	           .css("color","black");
+		   	
+		     });
+//				$(".senced").hover(function(){
+//					$(".senced").css("display","block");
+//					console.log("dsrf");
+//				},function(){
+//					$(".senced").css("display","none");
+//				}).onmouseleave;
+				$(".seacrh").click(function(){
+					console.log("dsrf");
+				});
+
+		     	
+		       
 		   });
 		   
 		   </script>

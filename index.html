@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>SNP</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/shizi.png"/>
 		<link rel="stylesheet" type="text/css" href="css/css.css"/>
 	</head>
 	<body>
@@ -30,7 +31,22 @@
 			</div>
 			<div class="tu">
 					<div class="lb">
-					<img src="img/datu.png"/>
+					<ul id="imgs">
+			<li style="display: block;"><img src="img/da5.jpg"></li>
+			<li><img src="img/da4.jpg"></li>
+			<li><img src="img/da3.jpg"></li>
+			<li><img src="img/da2.jpg"></li>
+			<li><img src="img/da1.jpg"></li>
+		   </ul>
+		   <div id="pages">
+		<div class="gbbs">
+			<p class="current">1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+		</div>
+		</div>
 					</div>
 					<div class="shangpin">
 						<div class="s_top">
@@ -38,12 +54,11 @@
 						</div>
 						<div class="s_bottom">
 							<dl>
-								<dt><a href="#"><img src="img/11.jpg"/></a></dt>
+								<dt><a href="/项目/html/particulars.html"><img src="img/11.jpg"/></a></dt>
 								<dd><a href="#" title="SNP动物面膜系列 京剧脸谱面膜十片装">SNP动物面膜系列 京剧脸谱面膜十片装</a></dd>
 							<b>215</b>
 							</dl>
 							</div>
-							
 				</div>
 				<div class="shangpin2">
 							<div class="ss_top">
@@ -59,7 +74,6 @@
 			 </div>
 			</div>
 		</div>
-		
 		</div>
 		<div id="footer"></div>
 		<script src="js/lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
@@ -102,9 +116,31 @@
 						$(".hotgoods").append(_div);
 					}
 				});
-				$.ajax({
-					
+				var curIndex = 0;
+				var autoChange = setInterval(function(){ 
+			        if(curIndex <  $("#imgs li").length-1){ 
+			            curIndex ++; 
+			        }else{ 
+			            curIndex = 0;
+			        }
+			        //调用变换处理函数
+			        changeTo(curIndex);  
+			    },3000);
+			    // 处理小圆点点击事件
+				$("#pages p").on("mouseenter",function(){
+					// 获取当前点击小圆点的索引
+					var index = $(this).index();
+					// 判断
+					if (index == curIndex)
+						return;
+					curIndex = index;
+					changeTo(curIndex);  
 				});
+				function changeTo(num){
+				    $("#imgs").find("li").fadeOut(600).eq(num).fadeIn(600);
+					$("#pages").find("p").eq(num).addClass("current").siblings().removeClass("current").fadeIn();
+			    }
+
 			});
 		</script>
 	</body>
