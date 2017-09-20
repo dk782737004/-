@@ -1,6 +1,6 @@
 require({
 	paths:{
-		"reg" : "reg"
-		
+		"reg" : "reg",
+		"jquery":"lib/jquery/jquery-1.12.4.min"
 	}
 })

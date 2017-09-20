@@ -5,6 +5,7 @@
 	border: 1px solid;
 	margin: 0 auto;
 	overflow: hidden;
+	position: relative;
 }
 #car_middle .car_main .car_center{
 	width: 980px;
@@ -30,4 +31,26 @@
 }
 #car_middle .car_main .bang{
    margin: -18px 0 0 27px;
+}
+.have{
+	width: 980px;
+	min-height: 200px;
+	position: absolute;
+	top: 85px;
+	border: 1px solid;
+}
+.have p{
+    margin: 0 0 0 33px;
+    float: left;
+    font-size: 13px;
+}
+.have ul{
+	margin:0 0 0 0;
+	float: right; 
+}
+.have li{
+	list-style: none;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
