@@ -41,10 +41,75 @@
 	height: 433px;
 }
 .pt_top .detail_left{
-	width: 371px;
-	height: 433px;
-	background: url(../img/xiangqing.png)no-repeat center center;
+	width: 369px;
+	height: 406px;
 	float: left;
+}
+.pt_top .detail_{
+	width: 400px;
+    height: 406px;
+    position: absolute;
+    top: 153px;
+    right: 395px;
+    overflow: hidden;
+    background: white;
+    display: none;
+}
+.pt_top .detail_ .ddtu{
+	width: 369px;
+    height: 406px;
+    position: absolute;
+    top: 153px;
+    right: 395px;
+    background: url(../img/fang0.jpg)no-repeat center center ;
+}
+.pt_top .detail_left .datu:hover{
+	cursor: move;
+}
+.len {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top:0; left:0;
+	background: #ccc;
+	opacity:0; 
+	display: none;
+	}
+.pt_top .detail_left .datu{
+	width: 369px;
+	height: 350px;
+	background: url(../img/fang0.jpg)no-repeat center center ;
+	background-size:cover ;
+	overflow: hidden;
+	position: relative;
+}
+.pt_top .detail_left .xiaotu{
+	width: 369px;
+	height: 56px;
+}
+.pt_top .detail_left .xiaotu ul{
+	width: 369px;
+	height: 56px;
+}
+.pt_top .detail_left .xiaotu ul li{
+	width: 55px;
+	height: 55px;
+	border: 1px solid #C0C0C0;
+	list-style: none;
+	float: left;
+	margin: 0px 10px 0px 2px;
+}
+.pt_top .detail_left .xiaotu ul li:nth-child(1){
+	background: url(../img/fang0.jpg)no-repeat center center;
+	background-size:cover ;
+}
+.pt_top .detail_left .xiaotu ul li:nth-child(2){
+	background: url(../img/fang1.jpg)no-repeat center center;
+	background-size:cover ;
+}
+.pt_top .detail_left .xiaotu ul li:nth-child(3){
+	background: url(../img/fang2.jpg)no-repeat center center;
+	background-size:cover ;
 }
 .pt_top .detail_right{
 	width: 640px;
@@ -114,7 +179,9 @@
 }
 .pt_center>p{
 	margin: 5px 0 36px 14px;
-	font-size: 12px;
+    font-size: 15px;
+    border-top: 1px dashed #ccc;
+    width: 357px;
 }
 .pt_center input{
 	width: 205px;
@@ -373,6 +440,72 @@
 	display: none;
 }
 .pt_right .ri_top .com1{display: none;}
+.com1 .fw{
+	width: 792px;
+	height: 50px;
+	border-bottom: 1px solid #CCCCCC;
+	line-height: 70px;
+}	
+.com1 div{
+	width: 792px;
+	height: 80px;
+	border-bottom: 1px solid #CCCCCC;
+	line-height: 45px;
+	font-size: 12px;
+}	
+.com1 p b{
+	font-size: 16px;
+}
+.com1 .day{
+	font-size: 12px;
+	margin: 0 414px 0 30px;
+}
+.com1 .star{
+	margin: 5px 0 0 0;
+}
+.com1 i{
+	font-style:normal;
+}
+.com1 em{
+	float: right;
+}
+.com1 span{
+	font-size: 12px;
+	margin: 0 400px 0 30px;
+}
+.com2 .fw{
+	width: 792px;
+	height: 50px;
+	border-bottom: 1px solid #CCCCCC;
+	line-height: 70px;
+}	
+.com2 div{
+	width: 792px;
+	height: 80px;
+	border-bottom: 1px solid #CCCCCC;
+	line-height: 45px;
+	font-size: 12px;
+}	
+.com2 p b{
+	font-size: 16px;
+}
+.com2 .day{
+	font-size: 12px;
+	margin: 0 414px 0 30px;
+}
+.com2 .star{
+	margin: 5px 0 0 0;
+}
+.com2 i{
+	font-style:normal;
+}
+.com2 em{
+	float: right;
+}
+.com2 span{
+	font-size: 12px;
+	margin: 0 400px 0 30px;
+}
 .pt_right .ri_top .property{
 	border-bottom: 1px solid #dddddd;
 }
@@ -425,12 +558,95 @@
 	text-align: left;
 }
 .pt_right .ri_bottom .com1{
-	height: 1500px;
+	height: 1265px;
 	width: 792px;
-	border: 1px solid;
 	display: none;
 }
 .pt_right .ri_bottom .com1 p{
 	margin: 0 0 0 0;
 	
+}
+.pt_right .ri_bottom .com2{
+	height: 1265px;
+	width: 792px;
+	display: none;
+}
+.pt_right .ri_bottom .com2 p{
+	margin: 0 0 0 0;
+	
+}
+.record{
+	color: #C0C0C0;
+	display: none;
+}
+.record b{
+	margin: 0 0 0 200px;
+    font-size: 12px;
+}
+.record button{
+	color: #C0C0C0;
+	margin: 35px 0 0 40px;
+}
+.ll{display: none;}
+.ll .pl{
+	color: #3C3C3C;
+    margin: 7px 0px 5px 0px;
+    background: url(../img/bang.png);
+    height: 25px;
+    padding: 0px 0 0 27px;
+}
+.ll .uname{
+	font-size: 13px;
+	margin: 10px 0 0 55px;
+}
+.ll .mail{
+	margin: 10px 0 0 36px;
+}
+.ll .mail>input{
+	margin: 0 0 0 62px;
+	outline: none;
+}
+.ll .dj{
+	margin: 10px 0 0 42px;
+    font-size: 13px;
+}
+.ll .nr{
+	margin: 0 0 0 32px;
+	font-size: 13px;
+}
+.ll .nr>textarea{
+	margin: 0 0 0 63px;
+	outline: none;
+}
+.ll .yzm{
+	margin: 10px 0 0 45px;
+    font-size: 13px;position: relative;
+}
+.ll .yzm>input{
+	margin: 10px 0 0 62px;
+	outline: none;
+	
+}
+.ll>a{
+	display: block;
+	width: 81px;
+	height: 29px;
+	background: url(../img/tj.png)no-repeat center center;
+	margin: 20px 0 0 251px;
+}
+.ll ._span2{
+    display: block;
+    width: 65px;
+    height: 23px;
+    background: #222222;
+    position: absolute;
+    top: 8px;
+    right: 360px;
+    color: white;
+    text-align: center;
+}
+.ll .duihao{
+	color: red;
+	font-weight:bolder;
+	font-size: 20px;
 }

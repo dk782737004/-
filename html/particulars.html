@@ -17,7 +17,25 @@
 						<p class="tai"><a href="../index.html">首页</a> &nbsp;&nbsp; >&nbsp;&nbsp; <a href="lis.html">动物面膜</a>&nbsp;&nbsp;>&nbsp;&nbsp;SNP动物面膜系列>京剧脸谱十片装</p>
 					</div>
 						<div class="detail">
-						<div class="detail_left"></div>	
+						<div class="detail_left">
+							<div class="datu">
+								<div class="len">
+									
+								</div>
+							</div>
+							<div class="xiaotu">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<div class="detail_">
+						    <div class="ddtu">
+						    	
+						    </div>
+						</div>
 						<div class="detail_right">
 							<p ><b>SNP动物面膜系列 &nbsp;&nbsp;京剧脸谱面膜十片装</b></p>
 							<p>本店售价：<b>￥159</b></p>
@@ -29,8 +47,8 @@
 							<p>商品点击次数：34521</p>
 							<p>购买此商品可得积分：15900积分</p>
 							<div class="price">
-								<p>购买数量：<input type="text"value="1" size="1"/><span>商品数量：581</span></p>
-								<p>商品总价：159</p>
+								<p>购买数量：<input type="text"value="1" size="1" class="_price"/><span>商品数量：581</span></p>
+								<p>商品总价：<span class="zj">159</span></p>
 								<button class="add"></button>
 								<button class="collect"></button>
 							</div>
@@ -39,7 +57,7 @@
 				</div>
 				<div class="pt_center">
 					<p><b>商品标签</b></p>
-					<input type="text" name="" id="" value="" /><button>添加</button>
+					<input type="text" /><button>添加</button>
 				</div>
 				<div class="pt_bottom">
 					<div class="pt_left">
@@ -105,10 +123,25 @@
 								<p><span class="a1">产地</span><span class="a2">韩国</span></p>
 							</div>
 							<div class="com1">
-								<p><b>18785754421</b><span class="day">2017-05-03 16:55:52</span><span class="star"></span></p>
+								<p class="fw"><b>&nbsp;&nbsp;&nbsp;&nbsp;18785754421</b><span class="day">2017-05-03 16:55:52</span><span class="star"><img src="../img/xingxing.png"/></span></p>
+								<div><p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是正品，非常好的购物。</i><br /><b>&nbsp;&nbsp;&nbsp;&nbsp;18785754421</b><span>2017-05-03 16:55</span><em ><img src="../img/xingxing.png"/></em></p></div>
+							</div>
+							<div class="com2">
+								<p class="fw"><b>&nbsp;&nbsp;&nbsp;&nbsp;llllll</b><span class="day">2017-05-03 16:55:52</span><span class="star"><img src="../img/xingxing.png"/></span></p>
+								<div><p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是正品</i><br /><b>&nbsp;&nbsp;&nbsp;&nbsp;1sdffs</b><span>2017-05-03 16:55</span><em ><img src="../img/xingxing.png"/></em></p></div>
 							</div>
 						</div>
-						
+						<p class="record"><b>总共32条记录，共两页</b><button class="up">《上一页</button> <button class="next">下一页》</button></p>
+						<div class="ll">
+						 <p class="pl"><b>请在这里发表你的评论</b></p>
+						 <p class="uname">用户名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;匿名用户</p>
+						 <p class="mail"><img src="../img/-.png"/>E-mail：<input type="text"/></p>
+						 <p class="dj">评级等级：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/heixingxing.png"/></p>
+						 <p class="nr"><img src="../img/-.png"/>评价内容：<textarea name="" rows="10" cols="50"></textarea></p>
+						 <p class="yzm"><img src="../img/-.png"/>验证码：<input type="text" name="" id="" value="" class="zm"/><span class="duihao"></span><span class="_span2"></span></p>
+						 <a href="#"></a>
+						</div>
+						 
 					</div>
 				</div>
 			</div>
@@ -117,7 +150,7 @@
 		<script src="../js/lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/requirejs/require.js" data-main = "../js/reg"></script>
 		<script type="text/javascript">
-	    $(function(){
+	    $(function(){//传数据
 	    	$.getJSON("../mock/particulars.json",function(data){
 	    		for (let i=0;i<data.length;i++) {
 	    			var oo=$(".sames div").eq(0).clone(true);
@@ -154,6 +187,39 @@
 	    			$(".also1").append(oo);
 	    		}
 	    	});
+	    	$.getJSON("../mock/particulars4.json",function(data){
+	    		$(".xiaotu li").on("mouseenter",function(){
+	    			var _index=$(this).index();
+	    			$(".datu").css("background-image","url("+data[_index].url+")");
+	    		});
+	    	});
+	    	$.getJSON("../mock/particulars4.json",function(data){
+	    		$(".xiaotu li").on("mouseenter",function(){
+	    			var _index=$(this).index();
+	    			$(".detail_ .ddtu").css("background-image","url("+data[_index].url+")");
+	    		});
+	    	});
+	    		$.getJSON("../mock/particulars5.json",function(data){
+	    		for (var i=0;i<data.length;i++) {
+	    			var ss=$(".com1 div").eq(0).clone(true);
+	    		   ss.find("p i").html(data[i].title);
+	    		   ss.find("p b").html(data[i].name);
+	    		   ss.find("p span").html(data[i].day);
+	    		   ss.find("p em").attr("src",data[i].img);
+	    		   $(".com1").append(ss);
+	    		}
+	    	});
+	    		$.getJSON("../mock/particulars6.json",function(data){
+	    		for (var i=0;i<data.length;i++) {
+	    			var ss=$(".com2 div").eq(0).clone(true);
+	    		   ss.find("p i").html(data[i].title);
+	    		   ss.find("p b").html(data[i].name);
+	    		   ss.find("p span").html(data[i].day);
+	    		   ss.find("p em").attr("src",data[i].img);
+	    		   $(".com2").append(ss);
+	    		}
+	    	});
+	        //胶囊导航
 	    	$(".describe").on("click",function(){
 	    		$(".com1").css("display","none");
 	    		$(".pro1").css("display","none");
@@ -164,6 +230,10 @@
 	    		$(".property").css("border-bottom","2px solid #dddddd");
 	    		$(".comment").css("border","none");
 	    		$(".comment").css("border-bottom","2px solid #dddddd");
+	    		$(".record").css("display","none");
+	    		$(".ll").css("display","none");
+	    		
+	    		
 	    		
 	    	});
 	    	$(".property").on("click",function(){
@@ -176,6 +246,10 @@
 	    		$(".property").css("border-bottom","none");
 	    		$(".comment").css("border","none");
 	    		$(".comment").css("border-bottom","2px solid #dddddd");
+	    		$(".record").css("display","none");
+	    		$(".ll").css("display","none");
+	    		
+	    		
 	    		
 	    	});
 	    	$(".comment").on("click",function(){
@@ -188,9 +262,96 @@
 	    		$(".property").css("border-bottom","2px solid #dddddd");
 	    		$(".comment").css("border","2px solid #dddddd");
 	    		$(".comment").css("border-bottom","none");
+	    		$(".record").css("display","block");
+	    		$(".ll").css("display","block");
+	    		
 	    	});
+	    	//放大镜
+	    	$(".datu").on("mouseenter",function(){
+	    		$(".len").show();
+	    		$(".detail_ .ddtu").show();
+	    		$(".detail_").show();
+	    		
+	    	});
+	    	$(".datu").on("mouseleave",function(){
+	    		$(".detail_ .ddtu").hide();
+	    		$(".detail_").hide();
+	    		
+	    		$(".len").hide();
+	    	});
+	    	$("html,body").on("mousemove",function(e){
+	    		var _pagex=e.pageX,
+	    		    _pagey=e.pageY,
+	    		 _left=_pagex-$(".len").offset().left-20,
+	    		 _top=_pagey-$(".len").offset().top-30;
+	    		 if(_top<0)
+	    		 _top=0;
+	    		 else if(_top>300)
+	    		 _top=300;
+	    		 if(_left<0)
+	    		 _left=0;
+	    		  else if(_left>300)
+                 _left=300;
+	    		 $(".len").css({"left":_left+"px",
+	    		                "top":_top+"px"});
+	              $(".detail_ .ddtu").css({
+	              	"top":-1*_top+"px",
+	              	"left":-1*_left+"px"
+	              });
+	    	});
+	    	$("._price").on("blur",function(){
+	    		var val=$("._price").val();
+	    		$(".zj").html(val*159);
+	    		if(val>581){
+	    			 $("._price").val(581);
+	    		    $(".zj").html(92379);
+	    		}
+	    	});
+	    	$(".record .up").on("click",function(){
+	    		$(".com1").css("display","block");
+	    		$(".com2").css("display","none");
+	    	});
+	    	$(".record .next").on("click",function(){
+	    		$(".com1").css("display","none");
+	    		$(".com2").css("display","block");
+	    		
+	    	});
+            function change(){
+					    code=$("._span2");
+					  // 验证码组成库
+					   var arrays=new Array( 
+					       '1','2','3','4','5','6','7','8','9','0',
+					       'a','b','c','d','e','f','g','h','i','j', 
+					       'k','l','m','n','o','p','q','r','s','t', 
+					       'u','v','w','x','y','z', 
+					       'A','B','C','D','E','F','G','H','I','J', 
+					       'K','L','M','N','O','P','Q','R','S','T', 
+					       'U','V','W','X','Y','Z'        
+					       ); 
+					    codes='';// 重新初始化验证码
+					   for(var i = 0; i<4; i++){
+					  	 // 随机获取一个数组的下标
+					   	var r = parseInt(Math.random()*arrays.length);
+					   	codes += arrays[r];
+					  }
+					  // 验证码添加到input里
+					     code.text(codes);
+					  }
+					 change();
+					 $("._span2").click(change);
+			
+	    $(".zm").on("blur",function(){
+	    	var a = $("._span2").text().toUpperCase(),
+	    		b=$(this).val().toUpperCase();
+	    	if(a===b){
+	    		
+	    		$(".duihao").html("√")
+	    	}else{
+	    		$(".duihao").html("×")
+	    		$(".zm").val("");
+	    	}
 	    });
-       
+       });
        </script>		
 	</body>
 </html>
