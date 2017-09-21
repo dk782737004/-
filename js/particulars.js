@@ -1,7 +1,6 @@
 require(["config"],function(){
-	require(["jquery"],function(){
+	require(["jquery","cookie","shopping"],function(){
 		$(function(){
-	     $("#pt_header").load("../html/include/header.html");
          $("#pt_footer").load("../html/include/footer.html");
          $.getJSON("../mock/particulars.json",function(data){
 	    		for (let i=0;i<data.length;i++) {
@@ -199,6 +198,38 @@ require(["config"],function(){
 	    		$(".zm").val("");
 	    	}
 	    });
-       });
-		});
+      });  
+        $(".add").on("click",function(){
+    	var product = {
+    		id:$(".id").text(),
+    		img:$(".sx1 img").text(),
+    		price:$(".sx2").text(),
+    		title:$(".sx3").text(),
+    		cont:$("._price").val(),
+    		amount:1
+    	}
+    	console.log(product);
+    	$.cookie.json=true;
+    	var _products=$.cookie("products")||[];
+    	var _index=indexOf(product.id,_products);
+    	if(_index===-1)
+    		_products.push(product);
+    	else
+    		_products[_index].amount++;
+    	$.cookie("products",_products,{expires:7,path:"/"})
+    	$(".success").css("display","block");
+    	$(".mo").css("display","block");
+    	function indexOf(id,products){
+    		for(var i=0;i<products.length;i++){
+    			if(products[i].id==id)
+    				return i;
+    		}
+    		return -1;
+    	}
+        });
+        $(".close").on("click",function(){
+    	$(".success").css("display","none");
+    	$(".mo").css("display","none");
+    });
+  });
 });

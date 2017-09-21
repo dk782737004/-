@@ -128,6 +128,9 @@
 }
 .pt_top .detail_right p:nth-child(2) b{
 	font-size: 20px;
+}
+.pt_top .detail_right p:nth-child(3) b{
+	font-size: 20px;
 	color: #f04331;
 }
 .pt_top .detail_right p:nth-child(3){
@@ -151,16 +154,21 @@
 .pt_top .detail_right>p:nth-child(9){
 		margin: 12px 0 0 14px;
 }
+.pt_top .detail_right>p:nth-child(10){
+		margin: 12px 0 0 14px;
+}
 .pt_top .detail_right .price{
-	margin: 28px 0 0 14px;
+	margin: 15px 0 0 14px;
 	font-size: 13px;
 }
 .pt_top .detail_right .price .add{
+	display: block;
 	width: 156px;
 	height: 37px;
 	outline: none;
 	border: none;
 	margin: 0 5px 0 0;
+	float: left;
 	background: url(../img/addcar.png)no-repeat center center;
 }
 .pt_top .detail_right .price .collect{
@@ -649,4 +657,55 @@
 	color: red;
 	font-weight:bolder;
 	font-size: 20px;
+}
+.mo{
+	width: 100%;
+	height: 2000px;
+	background: white;
+	position: absolute;
+	top: 0;
+	opacity: 0.7;
+	display: none;
+}
+.success{
+	width: 400px;
+    height: 120px;
+    border: 10px solid #C0C0C0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 1;
+    display: none;
+}
+.success a{
+	text-decoration: none;
+	color: black;
+}
+.success p:nth-child(2){
+	margin: 19px 0 0 15px ;
+}
+.success p:nth-child(1){
+	margin: 25px 0 0 5px;
+    width: 328px;
+    font-size: 14px;
+    float: right;
+}
+.js{
+	display: block;
+    width: 84px;
+    height: 29px;
+    background: url(../img/js.png)no-repeat center center;
+    opacity: 1;
+    float: left;
+    margin: -5px 10px 0 122px;
+}
+.close{
+	display: block;
+	width: 20px;
+	height: 20px;
+    margin: 3px 0 0 381px;
+    background: url(../img/close.png)no-repeat center center;
 }

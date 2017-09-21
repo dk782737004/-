@@ -1,7 +1,6 @@
 require(["config"],function(){
-	require(["jquery"],function(){
+	require(["jquery","shopping"],function(){
 		$(function(){
-			$("#reg_header").load("../html/include/header.html");
             $("#reg_footer").load("../html/include/footer.html");
 			$("#user_name").blur(function(){
 				
@@ -11,6 +10,7 @@ require(["config"],function(){
       	   		$("#yes").fadeIn();
        	   	}else{
       	   	    $("#name_info").fadeIn();
+      	   	    $("#user_name").val("")
       	   	    $("#yes").fadeOut();
       	   	}
               });
@@ -21,6 +21,7 @@ require(["config"],function(){
       	   		$("#yes1").fadeIn();
        	   	}else{
       	   	    $("#email_info").fadeIn();
+      	   	    $("#email").val("");
       	   	    $("#yes1").fadeOut();
       	   	}
               });
@@ -31,6 +32,7 @@ require(["config"],function(){
       	   		$("#yes2").fadeIn();
        	   	}else{
       	   	    $("#pad_info").fadeIn();
+      	   	    $("#password").val("");
       	   	    $("#yes2").fadeOut();
       	   	}
               });
@@ -41,8 +43,22 @@ require(["config"],function(){
       	   		$("#yes3").fadeIn();
        	   	}else{
       	   	    $("#pad1_info").fadeIn();
+      	   	    $("#password1").val("");
       	   	    $("#yes3").fadeOut();
       	   	}
+              });
+              $(".an").on("click",function(){
+              	var  message={
+              		name:$("#user_name").val(),
+              		_password:$("#password").val()
+              	}
+              	$.cookie("ly520",JSON.stringify(message));
+              });
+              $(".an").on("click",function(){
+              	var xoxo=$("#user_name").val()&&$("#email").val()&&$("#password").val()&&$("#password1").val();
+              	if(xoxo){
+              			location="/SNP/html/login.html";
+              	}
               });
 		});
 	});

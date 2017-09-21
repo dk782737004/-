@@ -2,7 +2,7 @@
 #car_middle .car_main{
 	width: 980px;
 	min-height: 376px;
-	border: 1px solid;
+	border: 1px solid #CCCCCC;
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
@@ -21,6 +21,7 @@
 #car_middle .car_main .car_center .cart{
 	width: 585px;
 	height: 200px;
+	background: white;
 }
 #car_middle .car_main .car_center .cart>b{
 	font-size: 20px;
@@ -37,7 +38,7 @@
 	min-height: 200px;
 	position: absolute;
 	top: 85px;
-	border: 1px solid;
+	display: none;
 }
 .have p{
     margin: 0 0 0 33px;
@@ -49,8 +50,72 @@
 	float: right; 
 }
 .have li{
-	list-style: none;
-	float: left;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+   list-style: none;
+    float: left;
+    margin: 0px 30px 0px 45px;
+    padding: 1px 2px 1px 0;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.have .list{
+	width: 980px;
+	height: 60px;
+	border: 1px solid #C0C0C0;
+	margin: 33px 0 0 0;
+}
+.have .list>a{
+    display: block;
+    width: 45px;
+    height: 50px;
+    float: left;
+    margin: 5px 0px 0 26px;
+    overflow: hidden;
+}
+.have .list>a img{
+	width: 35px;
+	height: 50px;
+}
+.have ._price_{
+    margin: 18px 0 0 260px;
+}
+.have .title{
+    margin: 19px 0 0 40px;
+}
+.have .shuru{
+    margin: 18px 0 0 65px;
+}
+.have .xiaoji{
+	margin: 17px 0 0 61px;
+}
+.have .delet{
+	width: 20px;
+	height: 20px;
+	margin: 17px 0 0 72px;
+}
+.have .zs{
+	font-size: 14px;
+	font-weight: bolder;
+    margin: 11px 0 0 29px;
+}
+.have .clear_{
+	display: block;
+	text-decoration: none;
+	color:#222222;
+	font-size: 12px;
+	margin: 11px 0 0 808px;
+}
+.have .jxgw{
+   display: block;
+    text-decoration: none;
+    margin: 5px 0 0 345px;
+    color: black;
+}
+.have .ljjs{
+	width: 150px;
+    height: 50px;
+    position: absolute;
+    background: url(../img/ljjs.png)no-repeat center center;
+    margin: 0 0 0 0;
+    top: 135px;
+    right: 382px;
 }

@@ -1,8 +1,8 @@
 require(["config"], function() {
-require(["jquery"], function() {
+require(["jquery","shopping"], function() {
 	$(function() {
 		$("#lis_footer").load("../html/include/footer.html");
-		$("#lis_header").load("../html/include/header.html");
+//		$("#lis_header").load("../html/include/header.html");
 		   	$.getJSON("../mock/lis.json",function(data){
 		   for (let i=0;i<data.length;i++) {
 		   	var pp=$(".s_bottom dl").eq(i).clone(true);

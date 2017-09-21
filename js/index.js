@@ -1,7 +1,14 @@
 require(["config"],function(){
-require(["jquery"],function(){
+require(["jquery","cookie"],function(){
 	$(function(){
-		$("#header").load("html/include/header1.html");
+//		$("#header").load("html/include/header1.html");
+  $.ajax("/SNP/html/include/header1.html").done(function(data){
+    	$.cookie.json=true;
+    	var _kas=$.cookie("products")||[],
+    	    len=_kas.length;
+    	    console.log(len)
+    	$(data).appendTo("#header").find(".num").text(len);
+    });
         $("#footer").load("html/include/footer.html");
         $.getJSON("mock/index.json",function(data){
 					for (let i=0;i<data.length;i++) {
@@ -63,8 +70,7 @@ require(["jquery"],function(){
 				    $("#imgs").find("li").fadeOut(600).eq(num).fadeIn(600);
 					$("#pages").find("p").eq(num).addClass("current").siblings().removeClass("current").fadeIn();
 			    }
+				
 	});
-
-	
 	});
 });
