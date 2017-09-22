@@ -1,6 +1,10 @@
 require(["config"], function() {
 require(["jquery","shopping"], function() {
 	$(function() {
+		     $(".mai").on("click",function(){
+		     	$(".mo").css("display","block");
+		     	$(".success").css("display","block");
+		     });
 			//加载所有省份
 				var url1 = "http://route.showapi.com/1149-1?showapi_appid=29550&showapi_sign=08402fce064a484baad949d9a18f75e7&level=1",
 					url2 = "http://route.showapi.com/1149-1?showapi_appid=29550&showapi_sign=08402fce064a484baad949d9a18f75e7&level=1&page=2";
@@ -33,9 +37,8 @@ require(["jquery","shopping"], function() {
 						else
 							$(".district").html(html);
 					});
-
-	
 	});
+	
 });
 });
 });
